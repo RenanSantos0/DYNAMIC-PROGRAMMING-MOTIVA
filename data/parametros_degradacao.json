@@ -1,0 +1,12 @@
+{
+  "alfa": 0.281,
+  "beta": 0.17,
+  "pesos_familias": {
+    "corrente_tensao": 0.722,
+    "oleo": 0.241,
+    "temperatura": 1.333,
+    "velocidade": 0.341,
+    "vibracao": 2.363
+  },
+  "origem": "SensEscada_EDA.ipynb, seção 5.3 (AR(2)) e 7.3 (duração média relativa por família), janela 2023-01 a 2026-09"
+}

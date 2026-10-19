@@ -1,0 +1,385 @@
+{
+  "descricao": "Rede de deslocamento da manutenção — Linha 4-Amarela (ViaQuatro/Motiva). Arestas não direcionadas, peso em minutos.",
+  "metodo": {
+    "metro": "dist/32.0 km/h*60 + 1 min",
+    "a_pe": "dist/4.5 km/h*60 + 1 min",
+    "viatura": "dist*1.4/18.0 km/h*60 + 5.0 min",
+    "velocidade_maxima_kmh": 32.0,
+    "arredondamento": "para cima, 0,1 min",
+    "coordenadas": "aproximadas (~100 m)"
+  },
+  "modos": {
+    "metro": {
+      "v_efetiva_kmh": 32.0,
+      "custo_fixo_min": 1.0
+    },
+    "a_pe": {
+      "v_efetiva_kmh": 4.5,
+      "custo_fixo_min": 1.0
+    },
+    "viatura": {
+      "v_efetiva_kmh": 12.8571,
+      "custo_fixo_min": 5.0
+    }
+  },
+  "base": "BASE",
+  "vertices": [
+    {
+      "id": "LUZ",
+      "nome": "Luz",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5363,
+      "lon": -46.6352,
+      "escadas_pmp": 20
+    },
+    {
+      "id": "REP",
+      "nome": "República",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5442,
+      "lon": -46.6428,
+      "escadas_pmp": 5
+    },
+    {
+      "id": "HIG",
+      "nome": "Higienópolis-Mackenzie",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5475,
+      "lon": -46.652,
+      "escadas_pmp": 26
+    },
+    {
+      "id": "PTA",
+      "nome": "Paulista",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5553,
+      "lon": -46.662,
+      "escadas_pmp": 18
+    },
+    {
+      "id": "FRE",
+      "nome": "Oscar Freire",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5617,
+      "lon": -46.6722,
+      "escadas_pmp": 20
+    },
+    {
+      "id": "FRA",
+      "nome": "Fradique Coutinho",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.566,
+      "lon": -46.6845,
+      "escadas_pmp": 10
+    },
+    {
+      "id": "FAL",
+      "nome": "Faria Lima",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.567,
+      "lon": -46.693,
+      "escadas_pmp": 10
+    },
+    {
+      "id": "PIN",
+      "nome": "Pinheiros",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5672,
+      "lon": -46.7019,
+      "escadas_pmp": 32
+    },
+    {
+      "id": "BUT",
+      "nome": "Butantã",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5718,
+      "lon": -46.7085,
+      "escadas_pmp": 14
+    },
+    {
+      "id": "MBI",
+      "nome": "São Paulo-Morumbi",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5865,
+      "lon": -46.7238,
+      "escadas_pmp": 13
+    },
+    {
+      "id": "VSO",
+      "nome": "Vila Sônia",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.596,
+      "lon": -46.7385,
+      "escadas_pmp": 20
+    },
+    {
+      "id": "TVS",
+      "nome": "Terminal Vila Sônia",
+      "tipo": "estacao",
+      "linha": "4-Amarela",
+      "lat": -23.5967,
+      "lon": -46.7395,
+      "escadas_pmp": 9
+    },
+    {
+      "id": "BASE",
+      "nome": "Base de Manutenção (Pátio Vila Sônia)",
+      "tipo": "base",
+      "linha": "4-Amarela",
+      "lat": -23.5985,
+      "lon": -46.743,
+      "escadas_pmp": 0
+    }
+  ],
+  "arestas": [
+    {
+      "origem": "LUZ",
+      "destino": "REP",
+      "modo": "metro",
+      "distancia_km": 1.171,
+      "minutos": 3.2
+    },
+    {
+      "origem": "LUZ",
+      "destino": "REP",
+      "modo": "viatura",
+      "distancia_km": 1.171,
+      "minutos": 10.5
+    },
+    {
+      "origem": "REP",
+      "destino": "HIG",
+      "modo": "metro",
+      "distancia_km": 1.007,
+      "minutos": 2.9
+    },
+    {
+      "origem": "REP",
+      "destino": "HIG",
+      "modo": "viatura",
+      "distancia_km": 1.007,
+      "minutos": 9.7
+    },
+    {
+      "origem": "HIG",
+      "destino": "PTA",
+      "modo": "metro",
+      "distancia_km": 1.338,
+      "minutos": 3.6
+    },
+    {
+      "origem": "HIG",
+      "destino": "PTA",
+      "modo": "viatura",
+      "distancia_km": 1.338,
+      "minutos": 11.3
+    },
+    {
+      "origem": "PTA",
+      "destino": "FRE",
+      "modo": "metro",
+      "distancia_km": 1.26,
+      "minutos": 3.4
+    },
+    {
+      "origem": "PTA",
+      "destino": "FRE",
+      "modo": "viatura",
+      "distancia_km": 1.26,
+      "minutos": 10.9
+    },
+    {
+      "origem": "FRE",
+      "destino": "FRA",
+      "modo": "metro",
+      "distancia_km": 1.342,
+      "minutos": 3.6
+    },
+    {
+      "origem": "FRE",
+      "destino": "FRA",
+      "modo": "viatura",
+      "distancia_km": 1.342,
+      "minutos": 11.3
+    },
+    {
+      "origem": "FRA",
+      "destino": "FAL",
+      "modo": "metro",
+      "distancia_km": 0.873,
+      "minutos": 2.7
+    },
+    {
+      "origem": "FRA",
+      "destino": "FAL",
+      "modo": "viatura",
+      "distancia_km": 0.873,
+      "minutos": 9.1
+    },
+    {
+      "origem": "FAL",
+      "destino": "PIN",
+      "modo": "metro",
+      "distancia_km": 0.907,
+      "minutos": 2.8
+    },
+    {
+      "origem": "FAL",
+      "destino": "PIN",
+      "modo": "viatura",
+      "distancia_km": 0.907,
+      "minutos": 9.3
+    },
+    {
+      "origem": "PIN",
+      "destino": "BUT",
+      "modo": "metro",
+      "distancia_km": 0.845,
+      "minutos": 2.6
+    },
+    {
+      "origem": "PIN",
+      "destino": "BUT",
+      "modo": "viatura",
+      "distancia_km": 0.845,
+      "minutos": 9.0
+    },
+    {
+      "origem": "BUT",
+      "destino": "MBI",
+      "modo": "metro",
+      "distancia_km": 2.259,
+      "minutos": 5.3
+    },
+    {
+      "origem": "BUT",
+      "destino": "MBI",
+      "modo": "viatura",
+      "distancia_km": 2.259,
+      "minutos": 15.6
+    },
+    {
+      "origem": "MBI",
+      "destino": "VSO",
+      "modo": "metro",
+      "distancia_km": 1.833,
+      "minutos": 4.5
+    },
+    {
+      "origem": "MBI",
+      "destino": "VSO",
+      "modo": "viatura",
+      "distancia_km": 1.833,
+      "minutos": 13.6
+    },
+    {
+      "origem": "VSO",
+      "destino": "TVS",
+      "modo": "a_pe",
+      "distancia_km": 0.128,
+      "minutos": 2.8
+    },
+    {
+      "origem": "VSO",
+      "destino": "TVS",
+      "modo": "viatura",
+      "distancia_km": 0.128,
+      "minutos": 5.6
+    },
+    {
+      "origem": "BASE",
+      "destino": "VSO",
+      "modo": "viatura",
+      "distancia_km": 0.536,
+      "minutos": 7.6
+    },
+    {
+      "origem": "BASE",
+      "destino": "TVS",
+      "modo": "viatura",
+      "distancia_km": 0.409,
+      "minutos": 7.0
+    },
+    {
+      "origem": "BASE",
+      "destino": "MBI",
+      "modo": "viatura",
+      "distancia_km": 2.368,
+      "minutos": 16.1
+    },
+    {
+      "origem": "BASE",
+      "destino": "BUT",
+      "modo": "viatura",
+      "distancia_km": 4.602,
+      "minutos": 26.5
+    },
+    {
+      "origem": "BASE",
+      "destino": "PIN",
+      "modo": "viatura",
+      "distancia_km": 5.446,
+      "minutos": 30.5
+    },
+    {
+      "origem": "BASE",
+      "destino": "PTA",
+      "modo": "viatura",
+      "distancia_km": 9.551,
+      "minutos": 49.6
+    },
+    {
+      "origem": "PIN",
+      "destino": "FRA",
+      "modo": "viatura",
+      "distancia_km": 1.778,
+      "minutos": 13.3
+    },
+    {
+      "origem": "FAL",
+      "destino": "PTA",
+      "modo": "viatura",
+      "distancia_km": 3.417,
+      "minutos": 21.0
+    },
+    {
+      "origem": "PTA",
+      "destino": "LUZ",
+      "modo": "viatura",
+      "distancia_km": 3.454,
+      "minutos": 21.2
+    },
+    {
+      "origem": "HIG",
+      "destino": "LUZ",
+      "modo": "viatura",
+      "distancia_km": 2.118,
+      "minutos": 14.9
+    },
+    {
+      "origem": "MBI",
+      "destino": "PIN",
+      "modo": "viatura",
+      "distancia_km": 3.096,
+      "minutos": 19.5
+    },
+    {
+      "origem": "BUT",
+      "destino": "FRE",
+      "modo": "viatura",
+      "distancia_km": 3.866,
+      "minutos": 23.1
+    }
+  ]
+}
